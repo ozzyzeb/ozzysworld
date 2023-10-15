@@ -5,6 +5,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - Brand</title>
+    <style>
+        .checkbox-container {
+            display: flex;  /* Makes the inner items align in a row */
+            align-items: center;  /* Vertically centers the checkbox with the label */
+            margin-bottom: 5px;  /* Some spacing between each checkbox-label pair */
+        }
+        .checkbox-container label {
+            margin-left: 5px;  /* Space between checkbox and label */
+            flex-shrink: 0;  /* Prevents the label from shrinking and wrapping */
+        }
+        #tag-business, #tag-neurodiverse, #tag-vip {
+            width: auto !important;
+        }
+        #mc-embedded-subscribe {
+            background-color: #4CAF50 !important;
+            transition: background-color 0.3s ease; /* Transition effect for smooth color change */
+        }
+        #mc-embedded-subscribe:hover {
+            background-color: #388E3C !important; /* Darker shade on hover */
+        }
+        .navbar-brand {
+            color: #FFFFFF !important;
+            font-size: 2.5em !important;
+            font-weight: bold !important;
+        }
+    </style>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900&amp;display=swap">
@@ -15,7 +41,11 @@
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="56">
     <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="mainNav">
-        <div class="container"><a class="navbar-brand" href="#page-top">The Ozzy Job App</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler float-end" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">The Ozzy Job App</a>
+            <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler float-end" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <!-- <li class="nav-item"><a class="nav-link" href="#download">Download</a></li> -->
@@ -33,35 +63,50 @@
                         <h1 class="mb-5">We are building an app to connect neuro diverse people with Jobs they love.</h1>
                         <div id="mc_embed_shell">
                             <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-                        <style type="text/css">
-                              #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
-                              /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                                 We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                      </style>
-                      <div id="mc_embed_signup">
-                          <form action="https://ozzyworld.us21.list-manage.com/subscribe/post?u=3dd4ca151c9ef1cfa7f553e69&amp;id=9570e2815c&amp;f_id=00c4e3e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                              <div id="mc_embed_signup_scroll"><h2>Subscribe</h2>
-                                  <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                                  <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
-                              <div id="mce-responses" class="clear foot">
-                                  <div class="response" id="mce-error-response" style="display: none;"></div>
-                                  <div class="response" id="mce-success-response" style="display: none;"></div>
-                              </div>
-                          <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                              /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-                              <input type="text" name="b_3dd4ca151c9ef1cfa7f553e69_9570e2815c" tabindex="-1" value="">
-                          </div>
-                              <div class="optionalParent">
-                                  <div class="clear foot">
-                                      <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                                      <p style="margin: 0px auto;"><a href="http://eepurl.com/iBQkSo" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
-                                  </div>
-                              </div>
-                          </div>
-                      </form>
-                      </div>
-                      <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
-                      
+                            <div id="mc_embed_signup">
+                                <form action="https://ozzyworld.us21.list-manage.com/subscribe/post?u=3dd4ca151c9ef1cfa7f553e69&amp;id=9570e2815c&amp;f_id=00c4e3e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                                    <div id="mc_embed_signup_scroll">
+                                        <div class="indicates-required"></div>
+                                        <div class="mc-field-group">
+                                            <label for="mce-EMAIL">
+                                                Email Address 
+                                            </label>
+                                            <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
+                                            <span id="mce-EMAIL-HELPERTEXT" style="display:none;" class="helper_text"></span>
+                                        </div>
+                                        <div id="mce-responses" class="clear foot">
+                                            <div class="response" id="mce-error-response" style="display: none;"></div>
+                                            <div class="response" id="mce-success-response" style="display: none;"></div>
+                                        </div>
+                                        <div class="mc-field-group">
+                                            <div class="checkbox-container">
+                                                <input type="checkbox" value="2884196" id="tag-business" class="tag-checkbox">
+                                                <label for="tag-business">I would like to hire neuro-diverse people</label>
+                                            </div>
+                                            <div class="checkbox-container">
+                                                <input type="checkbox" value="2884197" id="tag-neurodiverse" class="tag-checkbox">
+                                                <label for="tag-neurodiverse">I have ADHD, Dyslexia, ASD or similar</label>
+                                            </div>
+                                            <div class="checkbox-container">
+                                                <input type="checkbox" value="2884198" id="tag-vip" class="tag-checkbox">
+                                                <label for="tag-vip">I would like to support this project</label>
+                                            </div>
+                                        </div>
+                                        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                            /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                                            <input type="text" name="b_3dd4ca151c9ef1cfa7f553e69_9570e2815c" tabindex="-1" value="">
+                                        </div>
+                                        <div class="optionalParent">
+                                            <div class="clear foot">
+                                                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Find Out More">
+                                                <!-- Hidden field to store tags -->
+                                                <input type="hidden" name="tags" id="mce-TAGS" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                         <!-- <form action="#" method="post" id="placeholderForm">
                             <label for="email">Email:</label>
                             <input type="email" id="email" class="form-control" name="email" required>
@@ -204,23 +249,53 @@
     <section class="bg-primary contact" id="contact">
         <div class="container">
             <h2><span>We&nbsp;</span><i class="fa fa-heart"></i><span>&nbsp;new friends!</span></h2>
-            <ul class="list-inline list-social">
+            <div class="fs-1 fw-bold">Call Ozzy now <a style="color:#007BFF;" href="tel:+447437011694">+44 7437011694</a></div>
+            
+            <!-- <ul class="list-inline list-social">
                 <li class="list-inline-item social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
                 <li class="list-inline-item social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li class="list-inline-item social-google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            </ul>
+            </ul> -->
         </div>
     </section>
     <footer>
         <div class="container">
             <p>©&nbsp;Copyright 2023 Ozzy Zeb. All Rights Reserved.</p>
-            <ul class="list-inline">
+            <!-- <ul class="list-inline">
                 <li class="list-inline-item"><a href="#">Privacy</a></li>
                 <li class="list-inline-item"><a href="#">Terms</a></li>
                 <li class="list-inline-item"><a href="#">FAQ</a></li>
-            </ul>
+            </ul> -->
         </div>
     </footer>
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script type="text/javascript">
+        (function($) {
+            window.fnames = new Array(); 
+            window.ftypes = new Array();
+            fnames[0]='EMAIL';
+            ftypes[0]='email';
+            fnames[1]='FNAME';
+            ftypes[1]='text';
+            fnames[2]='LNAME';
+            ftypes[2]='text';
+            fnames[3]='ADDRESS';
+            ftypes[3]='address';
+            fnames[4]='PHONE';
+            ftypes[4]='phone';
+            fnames[5]='BIRTHDAY';
+            ftypes[5]='birthday';
+        }(jQuery));
+        var $mcj = jQuery.noConflict(true);
+        document.getElementById('mc-embedded-subscribe-form').addEventListener('submit', function() {
+            var tags = [];
+            var checkboxes = document.querySelectorAll('.tag-checkbox:checked');
+            checkboxes.forEach(function(checkbox) {
+                tags.push(checkbox.value);
+            });
+            document.getElementById('mce-TAGS').value = tags.join(',');
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/new-age.js"></script>
 </body>
